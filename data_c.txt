@@ -1,0 +1,51 @@
+Q: What is the C programming language?
+A: C is a low-level, general-purpose programming language developed at Bell Labs in the early 1970s by Dennis Ritchie. It gives programmers direct control over computer memory through pointers and manual memory management, which makes programs extremely fast and efficient. C is the language that most operating systems — including Linux and Windows — are written in. Almost every modern programming language has been influenced by C, making it one of the most important languages ever created.
+
+
+Q: How do you print output in C?
+A: Use printf() from the <stdio.h> header. Example: printf("Hello, World!\n"); The \n adds a newline. Use format specifiers for variables: printf("Age: %d, Name: %s\n", age, name);. Common specifiers: %d (int), %f (float), %c (char), %s (string). Always include #include <stdio.h> at the top.
+
+Q: How do you declare a variable in C?
+A: C is statically typed — declare the type first, then the name. Examples: int age = 25; float price = 9.99; char grade = 'A'; You can declare multiple variables of the same type: int x, y, z; Variables must be declared before use in older C standards (C89). Use const for constants: const int MAX = 100;.
+
+Q: What are the basic data types in C?
+A: Core types are: int (whole number, typically 4 bytes), float (32-bit decimal), double (64-bit decimal, more precise), char (single character, 1 byte), and void (no type, used for functions that return nothing). Use sizeof(type) to check the byte size. The standard headers define fixed-width types like int32_t.
+
+Q: How do you write a for loop in C?
+A: for (int i = 0; i < 5; i++) { printf("%d\n", i); } — initialise, condition, increment. Variables declared in the loop header require C99 or later. C also has while and do-while. Use break to exit and continue to skip to the next iteration.
+
+Q: How do you write a while loop in C?
+A: while (condition) { /* body */ } — condition checked first. do { /* body */ } while (condition); — body runs at least once. Example: int i = 0; while (i < 5) { printf("%d\n", i); i++; }. Always ensure the loop variable changes so the condition eventually becomes false.
+
+Q: How do you define a function in C?
+A: Declare the return type, name, and parameters: int add(int a, int b) { return a + b; }. Functions must be declared (prototyped) before they are called, or defined above the call site. void means no return value. C does not support function overloading — each function name must be unique.
+
+Q: How do you write comments in C?
+A: Single-line (C99+): // This is a comment. Multi-line: /* This spans multiple lines */. Comments are stripped by the preprocessor before compilation. Good practice: use block comments for file/function headers and inline comments to explain non-obvious logic.
+
+Q: How do you create an array in C?
+A: int numbers[5] = {1, 2, 3, 4, 5}; or int numbers[5]; (uninitialized). Access with numbers[0]. C arrays have no bounds checking — accessing out-of-range indices is undefined behaviour and can crash the program. The size must be a compile-time constant in C89; C99 supports variable-length arrays.
+
+Q: What are pointers in C?
+A: A pointer stores the memory address of another variable. Declare with *: int *p; Assign with address-of operator: p = &age;. Dereference to read/write the value: *p = 30; Pointers enable dynamic memory, arrays, and efficient pass-by-reference. They are C's most powerful — and most error-prone — feature.
+
+Q: What is dynamic memory allocation in C?
+A: Use malloc(), calloc(), or realloc() from <stdlib.h> to allocate heap memory at runtime. Example: int *arr = malloc(5 * sizeof(int));. Always check the return value for NULL. Free memory when done with free(arr); to avoid memory leaks. C has no garbage collector — manual memory management is the programmer's responsibility.
+
+Q: What is a struct in C?
+A: A struct groups related variables under one name. Example: struct Point { int x; int y; };. Declare a variable: struct Point p = {3, 4};. Access members with the dot operator: p.x. Use pointers to structs with the arrow operator: ptr->x. Structs are the basis for building custom data types in C.
+
+Q: What is the difference between printf and scanf in C?
+A: printf() writes formatted output to the console. scanf() reads formatted input from the console. Example: int age; scanf("%d", &age); — note the & (address-of) operator; scanf needs the address of the variable to write to. scanf returns the number of items successfully read.
+
+Q: How does a C program start execution?
+A: Every C program must have a main() function: int main(void) { /* code */ return 0; }. Execution begins at main. Returning 0 signals success to the operating system; non-zero values signal errors. Command-line arguments are passed as int argc (count) and char *argv[] (array of strings).
+
+Q: What is a preprocessor directive in C?
+A: Preprocessor directives start with # and are processed before compilation. #include <stdio.h> inserts a header file. #define PI 3.14159 creates a macro. #ifdef / #endif conditionally compile code. The preprocessor performs text substitution — it does not understand C syntax.
+
+Q: What makes C unique compared to other languages?
+A: C gives the programmer direct control over memory through pointers and manual allocation, producing extremely fast and compact code. It runs at near-hardware level, which is why operating systems (Linux, Windows), embedded firmware, and performance-critical software are written in C. Nearly every modern language was either derived from C or influenced by it.
+
+Q: How do you use strings in C?
+A: C has no built-in string type — strings are null-terminated character arrays: char name[] = "Alice";. Use functions from <string.h>: strlen() for length, strcpy() to copy, strcat() to concatenate, strcmp() to compare. Be careful with buffer overflows; prefer safer functions like strncpy() and snprintf().
