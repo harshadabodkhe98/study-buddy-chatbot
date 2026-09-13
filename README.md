@@ -210,4 +210,3 @@ No code changes needed — the app picks up new entries on the next run.
 
 ---
 
-*Made for a hackathon — happy hacking!*
