@@ -1,0 +1,54 @@
+Q: What is Python?
+A: Python is a beginner-friendly, high-level programming language created by Guido van Rossum in 1991. It reads almost like plain English, which makes it one of the easiest languages to learn. Python is used everywhere — from building websites and automating tasks to data science, machine learning, and scientific research. Its defining characteristic is that it uses indentation instead of curly braces to structure code, enforcing clean, readable style by design.
+
+
+Q: How do you print output in Python?
+A: Use the built-in print() function. For example: print("Hello, World!") outputs text to the console. You can print multiple values with commas: print("Name:", name), and control the separator with sep= or the line ending with end=.
+
+Q: How do you declare a variable in Python?
+A: Python uses dynamic typing — you just assign a value and Python infers the type. Example: age = 25 or name = "Alice". There is no need to declare a type keyword. Variables can be reassigned to a different type at any time.
+
+Q: What are Python data types?
+A: Python's built-in types include int (whole numbers), float (decimals), str (text), bool (True/False), list (ordered mutable sequence), tuple (ordered immutable sequence), dict (key-value pairs), and set (unordered unique values). Use type(x) to check an object's type at runtime.
+
+Q: How do you write a for loop in Python?
+A: Python for loops iterate over any iterable. Example: for i in range(5): print(i) prints 0 to 4. To loop over a list: for item in my_list: print(item). Use enumerate() to get both index and value: for i, v in enumerate(my_list):.
+
+Q: How do you write a while loop in Python?
+A: A while loop repeats as long as its condition is True. Example: count = 0; while count < 5: print(count); count += 1. Always make sure the condition eventually becomes False to avoid an infinite loop. Use break to exit early and continue to skip to the next iteration.
+
+Q: How do you define a function in Python?
+A: Use the def keyword followed by the function name and parentheses. Example: def greet(name): return "Hello, " + name. Call it with greet("Alice"). Python supports default arguments (def add(a, b=0):) and keyword arguments (add(b=3, a=1)).
+
+Q: How do you write comments in Python?
+A: Single-line comments start with #. Example: # This is a comment. Multi-line comments are typically written as multi-line strings (triple quotes): """This spans multiple lines.""", though these are technically string literals, not true comments.
+
+Q: How do you create a list in Python?
+A: Lists are created with square brackets: fruits = ["apple", "banana", "cherry"]. Access elements by index (fruits[0]), add with fruits.append("date"), remove with fruits.remove("banana"), and get the length with len(fruits). Lists are mutable and ordered.
+
+Q: How do you use a dictionary in Python?
+A: Dictionaries store key-value pairs: person = {"name": "Alice", "age": 25}. Access values with person["name"], add/update with person["city"] = "London", and delete with del person["age"]. Iterate with for key, value in person.items():.
+
+Q: What is a Python list comprehension?
+A: A list comprehension creates a new list in a single expression. Example: squares = [x**2 for x in range(10)] produces [0, 1, 4, 9, …, 81]. You can add a filter: evens = [x for x in range(20) if x % 2 == 0]. They are faster and more readable than equivalent for loops.
+
+Q: How do you handle exceptions in Python?
+A: Use try/except blocks. Example: try: result = 10 / 0 except ZeroDivisionError: print("Cannot divide by zero"). You can catch multiple exceptions, use else (runs if no exception), and finally (always runs, e.g. to close files).
+
+Q: What is a Python class?
+A: A class is defined with the class keyword. Example: class Dog: def __init__(self, name): self.name = name. The __init__ method is the constructor, and self refers to the current instance. Create an object with d = Dog("Rex") and access attributes with d.name.
+
+Q: How do you import a module in Python?
+A: Use import module_name, e.g. import math, then call math.sqrt(9). Import specific items with from math import sqrt. Create aliases with import numpy as np. Python's standard library includes modules like os, sys, json, re, datetime, and random.
+
+Q: What is a Python f-string?
+A: F-strings (formatted string literals) let you embed expressions directly in strings: name = "Alice"; print(f"Hello, {name}!"). Introduced in Python 3.6, they are faster and more readable than .format() or % formatting. You can include any expression: f"Result: {2 + 2}" → "Result: 4".
+
+Q: What makes Python unique compared to other languages?
+A: Python is unique for its emphasis on readability — indentation is part of the syntax, not just style. It supports multiple paradigms (OOP, functional, procedural), has an enormous standard library, and a massive ecosystem (NumPy, Pandas, TensorFlow). Its interactive REPL and dynamic typing make rapid prototyping very fast.
+
+Q: What is the difference between a list and a tuple in Python?
+A: Both are ordered sequences, but lists are mutable (you can change elements after creation) while tuples are immutable (cannot be changed). Tuples use parentheses: coords = (10, 20). Use tuples for fixed data (like coordinates or function return values) and lists for collections that change.
+
+Q: How does Python handle indentation?
+A: Python uses indentation (spaces or tabs) to define code blocks instead of curly braces. The standard is 4 spaces per level. Inconsistent indentation causes an IndentationError. This enforced style makes Python code visually consistent across all projects.

@@ -1,0 +1,54 @@
+Q: What is Java?
+A: Java is a strongly-typed, object-oriented programming language released by Sun Microsystems in 1995. Its famous promise is "Write Once, Run Anywhere" — Java code compiles to bytecode that runs on any device with a Java Virtual Machine (JVM), regardless of operating system. Java is the backbone of large-scale enterprise software, Android app development, and financial systems. It is verbose and explicit, which makes large codebases easier to maintain in teams.
+
+
+Q: How do you print output in Java?
+A: Use System.out.println() for output with a newline, or System.out.print() without one. Example: System.out.println("Hello, World!"); To print formatted text: System.out.printf("Name: %s, Age: %d%n", name, age);. Everything in Java must be inside a class and a method.
+
+Q: How do you declare a variable in Java?
+A: Java is statically typed — you must declare the type before the variable name. Examples: int age = 25; String name = "Alice"; double price = 9.99; boolean active = true;. Variables declared inside a method are local. Use final to make a constant: final int MAX = 100;.
+
+Q: What are Java data types?
+A: Java has eight primitive types: byte, short, int, long (integers), float, double (decimals), char (a single character), and boolean (true/false). There are also reference types — objects like String, arrays, and classes. int is the default for integers; double for decimals.
+
+Q: How do you write a for loop in Java?
+A: Standard for loop: for (int i = 0; i < 5; i++) { System.out.println(i); }. Enhanced for-each for collections/arrays: for (String s : names) { System.out.println(s); }. Java also has while and do-while loops. Use break to exit and continue to skip an iteration.
+
+Q: How do you write a while loop in Java?
+A: while (condition) { // body } — the condition is checked before each iteration. do { // body } while (condition); — the body runs at least once. Example: int i = 0; while (i < 5) { System.out.println(i); i++; }. Always ensure the condition can become false.
+
+Q: How do you define a method in Java?
+A: Methods are defined inside a class with an access modifier, return type, name, and parameters. Example: public int add(int a, int b) { return a + b; }. The main method signature is public static void main(String[] args). void means the method returns nothing.
+
+Q: How do you write comments in Java?
+A: Single-line: // This is a comment. Multi-line: /* This spans multiple lines */. Javadoc comments use /** ... */ and are read by tools to generate HTML documentation. Add @param and @return tags inside Javadoc to document method parameters and return values.
+
+Q: How do you create an array in Java?
+A: Declare and initialise: int[] numbers = {1, 2, 3, 4, 5};. Or declare then assign: int[] nums = new int[5]; — all elements default to 0. Access with nums[0]. Get length with nums.length. Arrays in Java have a fixed size; use ArrayList for a resizable collection.
+
+Q: What is a Java ArrayList?
+A: ArrayList is a resizable array in the java.util package. Example: ArrayList<String> list = new ArrayList<>(); list.add("Alice"); list.get(0); list.remove(0); list.size();. It only holds objects (use Integer, not int). Prefer ArrayList over arrays when the size is not known in advance.
+
+Q: What is a Java class and object?
+A: A class is a blueprint defining attributes (fields) and behaviour (methods). An object is an instance created with new: Car myCar = new Car();. The constructor initialises the object. Java uses this to refer to the current object. Every Java program must have at least one class.
+
+Q: How does exception handling work in Java?
+A: Use try/catch/finally. Example: try { int r = 10 / 0; } catch (ArithmeticException e) { System.out.println(e.getMessage()); } finally { // always runs }. Checked exceptions must be declared with throws or caught. RuntimeExceptions are unchecked.
+
+Q: What is the difference between == and .equals() in Java?
+A: == compares references (memory addresses) for objects, and values for primitives. .equals() compares the actual content. For Strings: "hello" == "hello" may be true due to string interning, but always use "hello".equals(other) for reliable content comparison.
+
+Q: What is a Java interface?
+A: An interface declares method signatures without implementation (pre-Java 8). A class implements an interface with implements. Example: interface Shape { double area(); }. Java 8+ allows default and static methods in interfaces. A class can implement multiple interfaces, unlike single-class inheritance.
+
+Q: What is the difference between public, private, and protected in Java?
+A: Access modifiers control visibility. private: accessible only within the same class. protected: accessible within the same package and subclasses. public: accessible from anywhere. The default (no modifier) is package-private — accessible within the same package only.
+
+Q: What makes Java unique compared to other languages?
+A: Java's core promise is "Write Once, Run Anywhere" — code compiles to bytecode that runs on any Java Virtual Machine (JVM), regardless of operating system. Java enforces strong typing, has garbage collection, and its platform independence made it the dominant language for enterprise applications and Android development.
+
+Q: What is the Java String class?
+A: String is an immutable class in java.lang. Examples: String s = "hello"; s.length() → 5; s.toUpperCase() → "HELLO"; s.substring(1, 3) → "el"; s.contains("ell") → true. Because strings are immutable, use StringBuilder when doing many concatenations to avoid creating many temporary objects.
+
+Q: How does Java handle inheritance?
+A: A class extends another with the extends keyword: class Dog extends Animal { }. The child class inherits all non-private fields and methods of the parent. Use super() to call the parent constructor. Java supports single inheritance for classes but multiple inheritance through interfaces.

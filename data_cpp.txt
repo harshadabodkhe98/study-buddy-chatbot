@@ -1,0 +1,51 @@
+Q: What is C++?
+A: C++ is a powerful, general-purpose programming language created by Bjarne Stroustrup in the early 1980s as an extension of C. It keeps C's speed and low-level memory control while adding object-oriented features like classes, inheritance, and the Standard Template Library. C++ is the language of choice for game engines, real-time graphics, operating system kernels, and performance-critical applications where every millisecond counts. Its defining trait is the "zero-overhead" principle — high-level abstractions cost nothing extra at runtime.
+
+
+Q: How do you print output in C++?
+A: Use cout from the <iostream> header: cout << "Hello, World!" << endl;. The << operator chains multiple values: cout << "Name: " << name << ", Age: " << age << "\n";. endl flushes the buffer; "\n" is faster. Include using namespace std; or use std::cout explicitly.
+
+Q: How do you declare a variable in C++?
+A: C++ is statically typed — declare type then name: int age = 25; string name = "Alice"; double price = 9.99; bool active = true;. C++11 introduced auto for type inference: auto x = 42; (x is int). Use const for constants and constexpr for compile-time constants.
+
+Q: What are the basic data types in C++?
+A: Primitive types include int, long, short (integers), float, double (decimals), char (character), bool (true/false), and void. C++ also provides std::string for text (from <string>), unlike C's char arrays. Use the <cstdint> header for fixed-width types like int32_t and int64_t.
+
+Q: How do you write a for loop in C++?
+A: Classic: for (int i = 0; i < 5; i++) { cout << i << "\n"; }. Range-based for (C++11): for (auto& item : collection) { cout << item << "\n"; }. C++ also has while and do-while. Use break to exit early and continue to skip to the next iteration.
+
+Q: How do you write a while loop in C++?
+A: while (condition) { /* body */ } — condition checked before each iteration. do { /* body */ } while (condition); — body runs at least once. Example: int i = 0; while (i < 5) { cout << i++ << "\n"; }. Combine with break and continue for fine-grained control.
+
+Q: How do you define a function in C++?
+A: returnType functionName(paramType param) { return value; }. Example: int add(int a, int b) { return a + b; }. C++ supports function overloading (same name, different parameters), default arguments (int add(int a, int b = 0)), and inline functions. Templates allow generic functions.
+
+Q: How do you write comments in C++?
+A: Single-line: // This is a comment. Multi-line: /* This spans multiple lines */. C++ also supports Doxygen-style doc comments (/** ... */) for generating API documentation. Comments are stripped during preprocessing and have no effect on runtime.
+
+Q: How do you create an array or vector in C++?
+A: C-style array: int arr[5] = {1, 2, 3, 4, 5};. Prefer std::vector: vector<int> v = {1, 2, 3}; v.push_back(4); v.size(); v[0];. Vectors resize automatically, provide bounds checking with .at(), and work with all STL algorithms. Include <vector> to use them.
+
+Q: What is a C++ class?
+A: A class bundles data (member variables) and behaviour (member functions/methods). Example: class Car { public: string brand; void honk() { cout << "Beep!\n"; } };. Create an object: Car c; c.brand = "Toyota"; c.honk();. Use private for encapsulation and public for the interface.
+
+Q: What are C++ pointers and references?
+A: A pointer stores a memory address (int* p = &x; *p = 5;). A reference is an alias for an existing variable (int& r = x; r = 5; changes x). References cannot be null and cannot be reseated after initialisation — they are safer than pointers for most use cases. Prefer references unless you specifically need pointer semantics.
+
+Q: What is the Standard Template Library (STL) in C++?
+A: The STL is a collection of generic classes and algorithms included with C++. It provides containers (vector, list, map, set, queue, stack), iterators to traverse them, and algorithms (sort, find, transform) from <algorithm>. STL uses templates so containers work with any data type.
+
+Q: What is RAII in C++?
+A: RAII (Resource Acquisition Is Initialisation) is a C++ idiom where resources (memory, files, locks) are tied to object lifetimes. A constructor acquires the resource; the destructor releases it automatically when the object goes out of scope. Smart pointers (unique_ptr, shared_ptr) implement RAII for heap memory, preventing leaks.
+
+Q: What is the difference between new/delete and malloc/free in C++?
+A: malloc/free are C functions that allocate raw memory without calling constructors or destructors. new/delete are C++ operators that allocate memory AND call the object's constructor/destructor. Always use new/delete (or better, smart pointers) for C++ objects. Mixing the two is undefined behaviour.
+
+Q: How does inheritance work in C++?
+A: class Dog : public Animal { }; — Dog inherits all public and protected members of Animal. Use virtual to make methods overridable in derived classes. virtual ~Animal() {} is essential for polymorphic base classes. C++ supports multiple inheritance, unlike Java and C#.
+
+Q: What makes C++ unique compared to other languages?
+A: C++ combines the low-level memory control of C with high-level features like classes, templates, the STL, and exceptions. It supports multiple programming paradigms (OOP, generic, procedural, and even functional). The zero-overhead principle means abstractions add no runtime cost — making C++ the language of choice for game engines, real-time systems, and performance-critical software.
+
+Q: What are smart pointers in C++?
+A: Smart pointers (from <memory>) manage heap memory automatically using RAII. std::unique_ptr owns the object exclusively — deleted when it goes out of scope. std::shared_ptr uses reference counting — deleted when the last owner is gone. std::weak_ptr holds a non-owning reference to a shared_ptr. Prefer smart pointers over raw new/delete to prevent memory leaks.
