@@ -1,0 +1,98 @@
+Q: What is artificial intelligence?
+A: Artificial intelligence (AI) is the simulation of human intelligence by computers. It enables machines to learn from experience, adapt to new inputs, and perform tasks that normally require human thinking — such as recognising speech, identifying images, or making decisions.
+
+Q: What is machine learning?
+A: Machine learning (ML) is a branch of AI where computers learn patterns from data without being explicitly programmed for every task. The system trains on examples and uses what it learned to make predictions or decisions on new data. Common uses include spam filters, recommendations, and fraud detection.
+
+Q: What is a variable?
+A: A variable is a named storage location in memory that holds a value which can change while a program runs. For example, in Python: age = 25 — here "age" is the variable name and 25 is its current value. Variables have a data type (number, text, boolean, etc.).
+
+Q: What is a data type?
+A: A data type defines the kind of value a variable can hold and the operations you can perform on it. Common types include integers (whole numbers), floats (decimals), strings (text), booleans (true/false), and lists. Choosing the right data type affects both correctness and performance.
+
+Q: What is a loop?
+A: A loop is a programming construct that repeats a block of code multiple times. A "for" loop iterates a fixed number of times or over a collection; a "while" loop keeps running as long as a condition is true. Loops are essential for processing lists, reading files, and repeating calculations.
+
+Q: What is an algorithm?
+A: An algorithm is a precise, step-by-step set of instructions designed to solve a problem or accomplish a task. Every program you run follows one or more algorithms. A recipe is a real-world analogy — it tells you exactly what steps to take and in what order to produce a result.
+
+Q: What is a function?
+A: A function is a reusable, named block of code that performs a specific task. You define it once and call it whenever you need it, avoiding repeated code. Functions accept inputs (parameters) and can return an output (return value). They make programs easier to read, test, and maintain.
+
+Q: What is a database?
+A: A database is an organised collection of structured data stored electronically so it can be queried and updated efficiently. Relational databases (MySQL, PostgreSQL, SQLite) store data in tables with rows and columns. Most websites and applications rely on a database to persist information.
+
+Q: What is an array?
+A: An array is an ordered collection of elements stored at contiguous memory locations, all of the same data type. You access each element by its numeric index, starting at 0. Arrays are fast for index-based access but have a fixed size in most languages. Python uses lists as its flexible array equivalent.
+
+Q: What is an API?
+A: An API (Application Programming Interface) is a defined set of rules that lets two software systems communicate. It specifies what requests can be made, how to make them, and what responses to expect — without exposing internal implementation. Web APIs (REST, GraphQL) allow apps to fetch data from remote services over the internet.
+
+Q: What is version control?
+A: Version control is the practice of tracking and managing changes to code over time. It lets multiple developers collaborate, revert to previous versions, and understand who changed what and why. Git is the most popular version control system. Platforms like GitHub and GitLab host remote repositories.
+
+Q: What is Git?
+A: Git is a distributed version control system created by Linus Torvalds. Developers use it to track code changes, create branches for new features, merge work from teammates, and roll back mistakes. Core commands include git init, git commit, git push, git pull, and git merge.
+
+Q: What is debugging?
+A: Debugging is the process of finding and fixing errors (bugs) in code. Techniques include reading error messages carefully, adding print statements to inspect values, using a debugger tool that lets you step through code line by line, and writing tests that isolate the faulty logic.
+
+Q: What is software testing?
+A: Software testing verifies that a program behaves correctly and meets requirements. Unit tests check individual functions; integration tests check how components work together; end-to-end tests simulate real user scenarios. Automated test suites catch regressions early and give developers confidence when changing code.
+
+Q: What is the difference between software and hardware?
+A: Hardware is the physical components of a computer — the CPU, RAM, hard drive, keyboard, and screen. Software is the set of instructions (programs) that tell the hardware what to do. Without software, hardware is inert; without hardware, software has nothing to run on.
+
+Q: What is RAM?
+A: RAM (Random Access Memory) is fast, temporary memory that the CPU uses to store data currently being worked on. When you open a program, it loads from storage into RAM so the CPU can access it quickly. RAM is volatile — its contents are lost when the power is turned off.
+
+Q: What is ROM?
+A: ROM (Read-Only Memory) is non-volatile memory whose contents are set at manufacture and persist when power is off. It typically stores firmware — low-level software like a computer's BIOS/UEFI that runs when the machine first starts. Unlike RAM, ordinary programs cannot write to ROM.
+
+Q: What is a CPU?
+A: The CPU (Central Processing Unit) is the primary chip in a computer that executes program instructions. It fetches an instruction, decodes it, executes it, and stores the result — billions of times per second. Modern CPUs have multiple cores, allowing them to run several tasks in parallel (multi-threading).
+
+Q: What is an operating system?
+A: An operating system (OS) is system software that manages computer hardware and provides services for programs. It handles memory allocation, file storage, process scheduling, and device drivers. Without an OS, each application would need to talk directly to hardware. Examples: Windows, macOS, Linux, Android.
+
+Q: What is object-oriented programming?
+A: Object-oriented programming (OOP) is a programming paradigm that structures code as objects — self-contained units combining data (attributes) and behaviour (methods). Its four core principles are encapsulation, abstraction, inheritance, and polymorphism. Java, Python, and C++ are popular OOP languages.
+
+Q: What is a compiler?
+A: A compiler translates an entire source code file written in a high-level language (like C or C++) into machine code before execution. It checks for syntax errors and optimises the output. The resulting executable can run directly on the hardware. Compare with an interpreter, which runs code line-by-line at runtime.
+
+Q: What is an interpreter?
+A: An interpreter reads and executes source code line-by-line at runtime, without producing a separate compiled binary. This makes it easier to test code interactively but generally slower than compiled code. Python, JavaScript (in browsers), and Ruby are commonly interpreted languages.
+
+Q: What is the difference between syntax errors and logic errors?
+A: A syntax error is a violation of the language's grammar rules — the code cannot even run (e.g., a missing colon in Python). A logic error means the code runs without crashing but produces the wrong result because the algorithm or conditions are incorrect. Logic errors are often harder to find because there is no error message.
+
+Q: What is boolean logic?
+A: Boolean logic is a system of algebra dealing with only two values: true and false (or 1 and 0). It uses operators AND, OR, and NOT to combine conditions. Computers use boolean logic in every decision: if statements, loops, and at the transistor level inside the CPU itself.
+
+Q: What is the internet?
+A: The internet is a global network of interconnected computers communicating via standard protocols, mainly TCP/IP. It carries email, web pages, streaming video, online games, and more. The World Wide Web (websites) is one service that runs on top of the internet — the two terms are related but not the same thing.
+
+Q: What is a data structure?
+A: A data structure is a specific way of organising and storing data so it can be accessed and modified efficiently. The right choice depends on your use case. Common structures include arrays, linked lists, stacks, queues, hash tables, trees, and graphs. Each has different speed trade-offs for insertion, lookup, and deletion.
+
+Q: What is recursion?
+A: Recursion is a programming technique where a function calls itself to solve a smaller version of the same problem. Every recursive solution needs a base case that stops the self-calls. Classic examples include calculating a factorial, performing binary search, and traversing a tree or directory structure.
+
+Q: What is binary code?
+A: Binary code represents data using only two symbols — 0 and 1 (bits). Every piece of information a computer processes is ultimately stored as binary: text, images, audio, and video. Eight bits form one byte. Higher-level abstractions (ASCII, Unicode, image formats) are all built on top of this binary foundation.
+
+Q: What is frontend and backend development?
+A: Frontend (client-side) development covers everything a user sees and interacts with in a browser — HTML, CSS, and JavaScript. Backend (server-side) development handles business logic, databases, and APIs that power the frontend. Full-stack developers work on both. The frontend sends requests; the backend processes them and returns data.
+
+Q: What is cloud computing?
+A: Cloud computing delivers computing resources — servers, storage, databases, networking, and software — over the internet on demand, rather than running them locally. It offers scalability, pay-as-you-go pricing, and high availability. Major providers include Amazon Web Services (AWS), Google Cloud, and Microsoft Azure.
+
+Q: What is cybersecurity?
+A: Cybersecurity is the practice of protecting computers, networks, and data from unauthorised access, damage, or attacks. Core techniques include encryption, firewalls, multi-factor authentication (MFA), vulnerability patching, and security audits. As more systems go online, cybersecurity has become critical for individuals and organisations alike.
+
+Q: What is networking?
+A: Computer networking is the practice of connecting computers and devices so they can share data and resources. Key concepts include IP addresses (unique identifiers for devices), DNS (translating domain names to IPs), routers (directing traffic), and protocols like HTTP, TCP/IP, and UDP that define how data is packaged and sent.
+
+Q: What is a programming language?
+A: A programming language is a formal notation for writing instructions that a computer can execute. Languages differ in syntax, paradigm (imperative, functional, OOP), and use case. Python is popular for data science and scripting; JavaScript for web; C/C++ for systems and games; Java for enterprise; SQL for databases.
